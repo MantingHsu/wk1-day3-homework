@@ -1,0 +1,27 @@
+include includes/header.pug
+
+main
+  section.hero
+    h1 Welcome to My Food Blog
+    p Sharing delicious homemade recipes and food stories.
+
+  section.featured
+    h2 Featured Recipe: Chili
+    .recipe
+      img(src="/images/chili.jpg", alt="Spicy Chili")
+      h3 Spicy Homemade Chili
+      p A hearty and flavorful chili made with ground beef, beans, and spices—perfect for cold nights!
+
+  section.author
+    h2 About the Author
+    .profile
+      img(src="/images/profile.png", alt="Author Profile Photo")
+      p Hi, I'm the creator of this food blog. I love experimenting with flavors and sharing the joy of cooking with others!
+
+  section.subscribe
+    h2 Subscribe for More Recipes
+    form(action="#", method="POST")
+      input(type="email", name="email", placeholder="Enter your email")
+      button(type="submit") Subscribe
+
+include includes/footer.pug
